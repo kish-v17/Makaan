@@ -74,10 +74,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Index.aspx" />
+>>>>>>> 09d37f32be794ff41d89d84bb9f14ac7dbbcd7a0
     <Content Include="App_Data\MakaanDB.mdf" />
     <Content Include="App_Data\MakaanDB_log.ldf">
       <DependentUpon>MakaanDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Buyer\Index.aspx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\style.css" />
     <Content Include="img\about.jpg" />
@@ -130,9 +140,38 @@
     <Content Include="lib\wow\wow.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="Seller\Index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buyer\BuyerMaster.Master.cs">
+      <DependentUpon>BuyerMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buyer\BuyerMaster.Master.designer.cs">
+      <DependentUpon>BuyerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Buyer\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buyer\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="helper\UserClass.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -163,11 +202,27 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Seller\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seller\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seller\SellerMaster.Master.cs">
+      <DependentUpon>SellerMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seller\SellerMaster.Master.designer.cs">
+      <DependentUpon>SellerMaster.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Makan.Master" />
     <Content Include="lib\owlcarousel\LICENSE" />
     <Content Include="lib\waypoints\links.php" />
+    <Content Include="Admin\AdminMaster.Master" />
+    <Content Include="Buyer\BuyerMaster.Master" />
     <None Include="packages.config" />
     <Content Include="scss\bootstrap.scss" />
     <Content Include="scss\bootstrap\scss\bootstrap-grid.scss" />
@@ -251,6 +306,7 @@
     <Content Include="scss\bootstrap\scss\_type.scss" />
     <Content Include="scss\bootstrap\scss\_utilities.scss" />
     <Content Include="scss\bootstrap\scss\_variables.scss" />
+    <Content Include="Seller\SellerMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -258,9 +314,13 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Folder Include="Seller\" />
   </ItemGroup>
+=======
+  <ItemGroup />
+>>>>>>> 09d37f32be794ff41d89d84bb9f14ac7dbbcd7a0
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

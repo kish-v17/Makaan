@@ -6,7 +6,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <div class="container col-md-12 px-5">
         <div class="wow fadeInUp" data-wow-delay="0.5s">
-            <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center my-5">
                 <h1 class="fw-bold">Welcome back</h1>
                 <p class="">Please Login via Email and Password </p>
             </div>   
@@ -20,11 +20,16 @@
                     <label for="txtPassword">Password</label>
                 </div>  
             </div>
+<<<<<<< HEAD
             <div class="col-12">
                 <asp:Button ID="btnLogin" runat="server" CssClass="btn btn-primary w-100 py-3" Text="Login" OnClick="btnLogin_Click" />
             </div>
             <div class="col-12 text-center mt-3">
                 <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
+=======
+            <div class="col-6 px-5">
+                <button class="btn btn-primary w-100 py-3" type="submit">Login</button>
+>>>>>>> 09d37f32be794ff41d89d84bb9f14ac7dbbcd7a0
             </div>
         </div>
     </div>
