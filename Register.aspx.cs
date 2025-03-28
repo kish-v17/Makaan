@@ -32,7 +32,7 @@ namespace Makaan
         {
             con = user.getcon();
             if (user.insert(txtFirstName.Text, txtLastName.Text, txtEmail.Text, txtPhone.Text, txtCity.Text, txtPassword.Text, ddlUserType.SelectedValue)) {
-                Response.Redirect("Index.aspx");
+                Response.Redirect("Index.aspx?msg=You have registered successfully!");
             }
         }
     }
