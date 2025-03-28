@@ -23,7 +23,7 @@ namespace Makaan.helper
         }
         public bool insert(string fnm, string lnm, string email, string phn, string city,string pwd, string role)
         {
-            cmd = new SqlCommand("insert into UserTbl(FirstName,LastName,Email,Mobile,City,Password,Role)values(@fnm,@lnm,@eml,@phn,@city,@role)",con);
+            cmd = new SqlCommand("insert into UserTbl(FirstName,LastName,Email,Mobile,City,Password,Role)values(@fnm,@lnm,@eml,@phn,@city,@pwd,@role)",con);
             cmd.Parameters.AddWithValue("@fnm",fnm);
             cmd.Parameters.AddWithValue("@lnm",lnm);
             cmd.Parameters.AddWithValue("@eml",email);
